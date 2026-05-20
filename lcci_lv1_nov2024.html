@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCCI Level 1 Certificate in Bookkeeping - November 2024 Past Paper Practice</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f3f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #34495e;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #bdc3c7;
+        }
+        .section-title {
+            background-color: #e8f4f8;
+            padding: 12px;
+            margin-top: 35px;
+            border-left: 6px solid #2980b9;
+            font-weight: bold;
+            border-radius: 0 6px 6px 0;
+        }
+        .q-block {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fafbfc;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+        }
+        .q-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .marks {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            display: block;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #cfd8dc;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        th { background-color: #f5f7f8; color: #34495e; font-weight: 600; }
+        input[type="number"], input[type="text"], select {
+            padding: 8px;
+            border: 1px solid #b0bec5;
+            border-radius: 4px;
+            font-size: 0.95em;
+            background-color: #fff;
+        }
+        input[type="number"]:focus, input[type="text"]:focus, select:focus {
+            border-color: #2980b9;
+            outline: none;
+            box-shadow: 0 0 4px rgba(41,128,185,0.3);
+        }
+        .num-input { width: 140px; }
+        .inline-sel { width: auto; margin: 0 4px; }
+        .mcq-label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 8px 12px;
+            border: 1px solid #e1e8ed;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.2s;
+        }
+        .mcq-label:hover { background-color: #f1f5f7; }
+        .mcq-label input { margin-right: 10px; }
+        
+        /* Drag and Drop System */
+        .dnd-instructions {
+            font-size: 0.85em;
+            color: #e67e22;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .drag-bank {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border: 2px dashed #b0bec5;
+            border-radius: 6px;
+        }
+        .draggable {
+            background-color: #fff;
+            padding: 8px 14px;
+            border: 1px solid #cfd8dc;
+            border-radius: 4px;
+            cursor: grab;
+            user-select: none;
+            font-size: 0.9em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            font-weight: 500;
+        }
+        .draggable:active { cursor: grabbing; }
+        .drop-zone {
+            min-width: 190px;
+            min-height: 36px;
+            border: 2px dashed #78909c;
+            background-color: #fafafa;
+            padding: 4px 10px;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-align: center;
+            font-weight: 600;
+            color: #2980b9;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        .drop-zone.filled {
+            border-style: solid;
+            border-color: #2980b9;
+            background-color: #eaf2f8;
+        }
+        .drop-zone:empty::before {
+            content: "Drop Option Here";
+            color: #b0bec5;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 0.85em;
+        }
+        
+        /* Interactive Submit Area */
+        .submit-btn {
+            background-color: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 16px;
+            font-size: 1.1em;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+        }
+        .submit-btn:hover { background-color: #219653; }
+        
+        #results {
+            display: none;
+            margin-top: 35px;
+            padding: 25px;
+            background-color: #ebf5fb;
+            border-left: 6px solid #2980b9;
+            border-radius: 4px;
+        }
+        .grade-dist { color: #27ae60; font-weight: bold; font-size: 1.2em; }
+        .grade-merit { color: #2980b9; font-weight: bold; font-size: 1.2em; }
+        .grade-pass { color: #f39c12; font-weight: bold; font-size: 1.2em; }
+        .grade-fail { color: #e74c3c; font-weight: bold; font-size: 1.2em; }
+        
+        /* Feedback tags */
+        .fb { font-size: 0.9em; margin-top: 6px; font-weight: bold; display: block; }
+        .fb-dnd-spec { display: inline-block; margin-left: 12px; font-size: 0.9em; font-weight: bold; vertical-align: middle; }
+        .c { color: #27ae60; }
+        .i { color: #e74c3c; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>LCCI Level 1 Certificate in Bookkeeping (November 2024 Paper)</h1>
+    <p>Practice assessment covering Learning Outcomes 1 through 4. Answer all questions exactly as presented in the computer-based assessment environment. Click <strong>Submit Assessment</strong> at the bottom to verify scores and review feedback.</p>
+
+    <form id="quizForm">
+        
+        <div class="section-title">Learning Outcome 1: 2-Mark Question Bank</div>
+        
+        <div class="q-block mcq-group" data-ans="Increase capital and increase an asset" data-marks="2">
+            <div class="q-title">Question 1</div><span class="marks">(2 marks)</span>
+            <p>A business owner deposits $5000 into the business bank account. Which one of the following identifies the dual effect of the above transaction?</p>
+            <label class="mcq-label"><input type="radio" name="lo1_2q1" value="Increase capital and increase an asset"> Increase capital and increase an asset</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q1" value="Decrease a liability and increase an asset"> Decrease a liability and increase an asset</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q1" value="Increase an asset and decrease an asset"> Increase an asset and decrease an asset</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q1" value="Decrease an asset and decrease capital"> Decrease an asset and decrease capital</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Debit $710" data-marks="2">
+            <div class="q-title">Question 2</div><span class="marks">(2 marks)</span>
+            <p>The following general ledger extract for an expense account has been provided for the month of October:</p>
+            <table>
+                <tr><th>Date</th><th>Details</th><th>Amount $</th><th>Date</th><th>Details</th><th>Amount $</th></tr>
+                <tr><td>2 Oct</td><td>Bank</td><td>480</td><td>10 Oct</td><td>Bank</td><td>120</td></tr>
+                <tr><td>14 Oct</td><td>Cash</td><td>350</td><td></td><td></td><td></td></tr>
+            </table>
+            <p>What would be the balance brought down on the account as of 1 November?</p>
+            <label class="mcq-label"><input type="radio" name="lo1_2q2_opt" value="Debit $710"> Debit $710</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q2_opt" value="Debit $830"> Debit $830</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q2_opt" value="Credit $710"> Credit $710</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q2_opt" value="Credit $830"> Credit $830</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Writing off an irrecoverable debt" data-marks="2">
+            <div class="q-title">Question 3</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following transactions should be completed by using a journal entry?</p>
+            <label class="mcq-label"><input type="radio" name="lo1_2q3_opt" value="Writing off an irrecoverable debt"> Writing off an irrecoverable debt</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q3_opt" value="Recording a bank receipt from a credit customer"> Recording a bank receipt from a credit customer</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q3_opt" value="Recording sales returns in the general ledger"> Recording sales returns in the general ledger</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q3_opt" value="Recording a bank payment made to a credit supplier"> Recording a bank payment made to a credit supplier</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="$19200" data-marks="2">
+            <div class="q-title">Question 4</div><span class="marks">(2 marks)</span>
+            <p>Miranda purchased a piece of equipment for use in her business on 1 December. The total cost of the equipment included:</p>
+            <table>
+                <tr><th>Component</th><th>$</th></tr>
+                <tr><td>Purchase price</td><td>18000</td></tr>
+                <tr><td>Installation costs</td><td>1200</td></tr>
+                <tr><td>Maintenance charges (2 years)</td><td>400</td></tr>
+                <tr><td>Total cost</td><td>19600</td></tr>
+            </table>
+            <p>What is the value of the equipment which should be capitalised?</p>
+            <label class="mcq-label"><input type="radio" name="lo1_2q4_opt" value="$19200"> $19200</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q4_opt" value="$18000"> $18000</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q4_opt" value="$18400"> $18400</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q4_opt" value="$19600"> $19600</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Debit card" data-marks="2">
+            <div class="q-title">Question 5</div><span class="marks">(2 marks)</span>
+            <p>A business owner wishes to make an online payment for a one-off purchase from a supplier. Which one of the following payment methods would be the most suitable for the business owner to use in this situation?</p>
+            <label class="mcq-label"><input type="radio" name="lo1_2q5_opt" value="Debit card"> Debit card</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q5_opt" value="Cheque"> Cheque</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q5_opt" value="Direct debit"> Direct debit</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q5_opt" value="Standing order"> Standing order</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Assets - Liabilities = Capital (Equity)" data-marks="2">
+            <div class="q-title">Question 6</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following correctly identifies the accounting equation?</p>
+            <label class="mcq-label"><input type="radio" name="lo1_2q6_opt" value="Assets - Liabilities = Capital (Equity)"> Assets - Liabilities = Capital (Equity)</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q6_opt" value="Capital (Equity) = Assets + Liabilities"> Capital (Equity) = Assets + Liabilities</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q6_opt" value="Liabilities = Capital (Equity) + Assets"> Liabilities = Capital (Equity) + Assets</label>
+            <label class="mcq-label"><input type="radio" name="lo1_2q6_opt" value="Assets = Liabilities - Capital (Equity)"> Assets = Liabilities - Capital (Equity)</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="section-title">Learning Outcome 1: 4-Mark Question Bank</div>
+
+        <div class="q-block">
+            <div class="q-title">Question 1</div><span class="marks">(4 marks)</span>
+            <p>You have been provided with the following list of balances as at 1 June:</p>
+            <table>
+                <tr><th>Account</th><th>$</th></tr>
+                <tr><td>Motor vehicles</td><td>18000</td></tr>
+                <tr><td>Trade receivables</td><td>7210</td></tr>
+                <tr><td>Bank loan</td><td>5000</td></tr>
+                <tr><td>Inventory</td><td>3490</td></tr>
+                <tr><td>Bank (overdrawn)</td><td>1200</td></tr>
+            </table>
+            <p>What is the amount of capital invested in the business? Enter your answer in whole $ only.</p>
+            $ <input type="number" class="q-input num-input" data-ans="22500" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 2</div><span class="marks">(4 marks)</span>
+            <p>A bookkeeper has identified two errors in the bookkeeping of a business. Identify the type of error using the drag and drop options.</p>
+            <div class="dnd-instructions">Drag options into target fields. Click target field to clear.</div>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Error of commission">Error of commission</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Error of original entry">Error of original entry</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Error of principle">Error of principle</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Error of omission">Error of omission</div>
+            </div>
+            <table>
+                <tr><th>Bookkeeping error</th><th>Type of error</th></tr>
+                <tr><td>Drawings made by the owner have been recorded as wages</td>
+                    <td><div class="drop-zone q-input-dnd" data-ans="Error of principle" data-marks="2" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Bank interest paid amounting to $65 has been recorded as $56</td>
+                    <td><div class="drop-zone q-input-dnd" data-ans="Error of original entry" data-marks="2" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 3</div><span class="marks">(4 marks)</span>
+            <p>Lee buys materials on credit from a company to use in his work as a painter and decorator. The opening balance on his account at the start of the month was $280. During the current month, Lee received invoices amounting to $795 and credit notes amounting to $120. He also made a payment direct from his bank to the company for $560. What balance would appear on the statement of account Lee receives at the end of the current month?</p>
+            $ <input type="number" class="q-input num-input" data-ans="395" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 4</div><span class="marks">(4 marks)</span>
+            <p>Classify each of the following transactions as either capital income, revenue income, capital expenditure or revenue expenditure by using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Capital income">Capital income</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Revenue income">Revenue income</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Capital expenditure">Capital expenditure</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Revenue expenditure">Revenue expenditure</div>
+            </div>
+            <table>
+                <tr><th>Transaction</th><th>Classification</th></tr>
+                <tr><td>Purchase of computer equipment for use in the office</td><td><div class="drop-zone q-input-dnd" data-ans="Capital expenditure" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>The receipt of a bank loan</td><td><div class="drop-zone q-input-dnd" data-ans="Capital income" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>The purchase of goods for resale</td><td><div class="drop-zone q-input-dnd" data-ans="Revenue expenditure" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A bank payment for rent payable in advance for the next quarter</td><td><div class="drop-zone q-input-dnd" data-ans="Revenue expenditure" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 5</div><span class="marks">(4 marks)</span>
+            <p>Jacob uses a petty cash imprest system in his business. At the start of the month there is a balance of $200 in petty cash. During the month, the following amounts were paid out of petty cash: Postage $52, Cleaning $65, Travel $40. How much should Jacob withdraw from the bank to restore the petty cash balance?</p>
+            $ <input type="number" class="q-input num-input" data-ans="157" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 6</div><span class="marks">(4 marks)</span>
+            <p>Identify the business document being described in each of the following statements using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Statement of account">Statement of account</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Invoice">Invoice</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Remittance advice">Remittance advice</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Credit note">Credit note</div>
+            </div>
+            <table>
+                <tr><th>Statement</th><th>Business document</th></tr>
+                <tr><td>A document sent by a customer to a supplier when making a payment on account.</td><td><div class="drop-zone q-input-dnd" data-ans="Remittance advice" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A document issued by a supplier to a customer to reduce the balance owed from a previous invoice.</td><td><div class="drop-zone q-input-dnd" data-ans="Credit note" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A document sent by the seller to the customer showing the transactions for a period of time, usually a month.</td><td><div class="drop-zone q-input-dnd" data-ans="Statement of account" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A document that requests a payment from a customer for goods/services provided by the seller.</td><td><div class="drop-zone q-input-dnd" data-ans="Invoice" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 7</div><span class="marks">(4 marks)</span>
+            <p>Identify the accounting concept being described in each of the following statements using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Accruals">Accruals</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Consistency">Consistency</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Business entity">Business entity</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Going concern">Going concern</div>
+            </div>
+            <table>
+                <tr><th>Statement</th><th>Concept</th></tr>
+                <tr><td>This concept is the underlying accounting concept.</td><td><div class="drop-zone q-input-dnd" data-ans="Going concern" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Transactions should be reflected in the financial statements for the period in which they occur.</td><td><div class="drop-zone q-input-dnd" data-ans="Accruals" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Financial statements reflect the activities of the business only and not those relating to the business owner.</td><td><div class="drop-zone q-input-dnd" data-ans="Business entity" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Once a business has adopted a policy for treating an accounting item, it will treat all similar items in the same way in the future.</td><td><div class="drop-zone q-input-dnd" data-ans="Consistency" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 8</div><span class="marks">(4 marks)</span>
+            <p>Jamie trades as a sole trader, providing gardening services to people in his local community. Jamie's bank account had an overdrawn balance on 1 September of $210. On 2 September Jamie deposited $680 into the business bank account and paid $180 for materials for a job. What was the balance on Jamie's bank account at the close of business on 2 September?</p>
+            $ <input type="number" class="q-input num-input" data-ans="290" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 9</div><span class="marks">(4 marks)</span>
+            <p>Identify the dual effect of each of the following transactions by dragging the appropriate description into the table below.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Decrease a liability and decrease an asset">Decrease a liability and decrease an asset</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Increase a liability and increase an asset">Increase a liability and increase an asset</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Both decrease and increase an asset">Both decrease and increase an asset</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Decrease an asset and increase a liability">Decrease an asset and increase a liability</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Both decrease and increase a liability">Both decrease and increase a liability</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Increase capital and increase an asset">Increase capital and increase an asset</div>
+            </div>
+            <table>
+                <tr><th>Transaction</th><th>Dual effect</th></tr>
+                <tr><td>A business pays the amount owed to a credit supplier by bank transfer from the business bank account.</td><td><div class="drop-zone q-input-dnd" data-ans="Decrease a liability and decrease an asset" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A customer pays an invoice by bank transfer into the business bank account.</td><td><div class="drop-zone q-input-dnd" data-ans="Both decrease and increase an asset" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A business takes out a bank loan, the proceeds from which, are received into the business bank account.</td><td><div class="drop-zone q-input-dnd" data-ans="Increase a liability and increase an asset" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A business owner injects additional funds into the business by transferring personal money into the business bank account.</td><td><div class="drop-zone q-input-dnd" data-ans="Increase capital and increase an asset" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 10</div><span class="marks">(4 marks)</span>
+            <p>Identify the payment method being used in each of the following scenarios by using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Credit card">Credit card</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Direct debit">Direct debit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Standing order">Standing order</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Cheque">Cheque</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Debit card">Debit card</div>
+            </div>
+            <table>
+                <tr><th>Scenario</th><th>Payment method</th></tr>
+                <tr><td>A customer makes an instruction to their bank to pay a fixed amount at regular intervals to a named party.</td><td><div class="drop-zone q-input-dnd" data-ans="Standing order" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A payment is made to purchase goods online which reduces the funds available in the business bank account immediately.</td><td><div class="drop-zone q-input-dnd" data-ans="Debit card" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A business makes a payment through the post to clear the balance on a credit account.</td><td><div class="drop-zone q-input-dnd" data-ans="Cheque" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A payment is made to purchase goods online however the business does not wish to use funds from the business bank account straight away.</td><td><div class="drop-zone q-input-dnd" data-ans="Credit card" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 11</div><span class="marks">(4 marks)</span>
+            <p>The following account is in the payables ledger at the close of day on the 30 April:</p>
+            <table>
+                <tr><th>Date</th><th>Details</th><th>Amount $</th><th>Date</th><th>Details</th><th>Amount $</th></tr>
+                <tr><td>12 April</td><td>Credit note CN18</td><td>320</td><td>1 April</td><td>Balance b/f</td><td>1970</td></tr>
+                <tr><td>28 April</td><td>Bank</td><td>1740</td><td>5 April</td><td>Invoice INV502</td><td>1250</td></tr>
+                <tr><td></td><td></td><td></td><td>24 April</td><td>Invoice INV680</td><td>890</td></tr>
+            </table>
+            <p>Complete the sentences below using the drag and drop options:</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="credit">credit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="debit">debit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="4110">4110</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="2050">2050</div>
+            </div>
+            <p style="line-height: 2.5;">
+                The balance c/d on the account would be on the 
+                <span class="drop-zone q-input-dnd" data-ans="debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span> side of the account.<br>
+                The balance c/d would be a value of $ 
+                <span class="drop-zone q-input-dnd" data-ans="2050" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span>.<br>
+                The value shown in the total boxes on the account would be $ 
+                <span class="drop-zone q-input-dnd" data-ans="4110" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span>.<br>
+                The balance b/d on the account as at 1 May would be on the 
+                <span class="drop-zone q-input-dnd" data-ans="credit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span> side of the account.
+            </p>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 12</div><span class="marks">(4 marks)</span>
+            <p>You are preparing a sales invoice for a customer. The purchase order received from the customer shows the following:</p>
+            <table>
+                <tr><th>Quantity</th><th>Product code</th><th>$</th></tr>
+                <tr><td>200</td><td>PC24</td><td>12.50 per unit</td></tr>
+            </table>
+            <p>The customer is entitled to a trade discount of 5%. What is the total value of the invoice to be issued to the customer in relation to this order?</p>
+            $ <input type="number" class="q-input num-input" data-ans="2375" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="section-title">Learning Outcome 2: 2-Mark Question Bank</div>
+
+        <div class="q-block mcq-group" data-ans="$1852.50" data-marks="2">
+            <div class="q-title">Question 1</div><span class="marks">(2 marks)</span>
+            <p>An employee receives a salary of $25800 per annum. Each month the employee pays tax amounting to $190 and contributes $107.50 per month into a pension scheme. What is the amount of net pay for the month?</p>
+            <label class="mcq-label"><input type="radio" name="lo2_2q1_opt" value="$1852.50"> $1852.50</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q1_opt" value="$2042.50"> $2042.50</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q1_opt" value="$2150.00"> $2150.00</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q1_opt" value="$1960.00"> $1960.00</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="$480.00" data-marks="2">
+            <div class="q-title">Question 2</div><span class="marks">(2 marks)</span>
+            <p>Maggie works as a production worker in a factory. For each unit that Maggie produces she is paid $1.80. If she produces more than 200 in a week, she is also paid a bonus of $0.20 per unit for each unit above 200 units. Maggie produced 260 units in a week. What is her gross pay for the period?</p>
+            <label class="mcq-label"><input type="radio" name="lo2_2q2_opt" value="$480.00"> $480.00</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q2_opt" value="$468.00"> $468.00</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q2_opt" value="$520.00"> $520.00</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q2_opt" value="$460.00"> $460.00</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Tax" data-marks="2">
+            <div class="q-title">Question 3</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following is a statutory payroll deduction?</p>
+            <label class="mcq-label"><input type="radio" name="lo2_2q3_opt" value="Tax"> Tax</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q3_opt" value="Gym membership fees"> Gym membership fees</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q3_opt" value="Union membership fees"> Union membership fees</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q3_opt" value="Voluntary pension scheme"> Voluntary pension scheme</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Gross pay will be based on hours worked and any hours worked in excess of basic hours will be paid overtime." data-marks="2">
+            <div class="q-title">Question 4</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following best describes a method of paying labour costs via time rate?</p>
+            <label class="mcq-label"><input type="radio" name="lo2_2q4_opt" value="Gross pay will be based on hours worked and any hours worked in excess of basic hours will be paid overtime."> Gross pay will be based on hours worked and any hours worked in excess of basic hours will be paid overtime.</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q4_opt" value="Gross pay is based on hours worked with an extra amount added if output exceeds a pre-agreed level."> Gross pay is based on hours worked with an extra amount added if output exceeds a pre-agreed level.</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q4_opt" value="The gross pay is based on the level of production achieved."> The gross pay is based on the level of production achieved.</label>
+            <label class="mcq-label"><input type="radio" name="lo2_2q4_opt" value="The gross pay is based on the production level achieved, and any units in excess of a minimum level will be eligible for a group bonus."> The gross pay is based on the production level achieved, and any units in excess of a minimum level will be eligible for a group bonus.</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="section-title">Learning Outcome 2: 4-Mark Question Bank</div>
+
+        <div class="q-block">
+            <div class="q-title">Question 1</div><span class="marks">(4 marks)</span>
+            <p>An employee is guaranteed a basic minimum wage of 37 hours at a rate of $11 per hour. During the week, the employee produced 230 units and at a rate of $2 per unit. What is the employee's gross pay for the week?</p>
+            $ <input type="number" class="q-input num-input" data-ans="460" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 2</div><span class="marks">(4 marks)</span>
+            <p>Kay operates a business as a sole trader. She has 5 employees, and the payroll information for the latest weekly pay is as follows:</p>
+            <table>
+                <tr><th>Rate Breakdown</th><th>Hours</th></tr>
+                <tr><td>Hours worked at basic rate</td><td>150 hours</td></tr>
+                <tr><td>Hours worked at time and a half</td><td>18 hours</td></tr>
+                <tr><td>Hours worked at time and a quarter</td><td>12 hours</td></tr>
+            </table>
+            <p>The hourly rate is $12.00. What is the wages expense for the week?</p>
+            $ <input type="number" class="q-input num-input" data-ans="2304" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 3</div><span class="marks">(4 marks)</span>
+            <p>Identify the labour payment method used for each of the four employees using the drag and drop options below.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Time rate">Time rate</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Salary">Salary</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Time rate plus bonus">Time rate plus bonus</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Piece rate">Piece rate</div>
+            </div>
+            <table>
+                <tr><th>Scenario</th><th>Method</th></tr>
+                <tr><td>Lily is paid an annual amount of $24000 spread evenly over 12 months.</td><td><div class="drop-zone q-input-dnd" data-ans="Salary" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Ava is paid a rate of $15.00 per hour for each hour worked. Any hours worked in excess of her basic hours will be paid overtime.</td><td><div class="drop-zone q-input-dnd" data-ans="Time rate" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Tony is paid a rate of $14 per hour for each hour worked. If his units produced exceed 100 per week, he is paid an extra 10%.</td><td><div class="drop-zone q-input-dnd" data-ans="Time rate plus bonus" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Carl is paid based on production levels and is paid $1.50 per unit produced.</td><td><div class="drop-zone q-input-dnd" data-ans="Piece rate" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 4</div><span class="marks">(4 marks)</span>
+            <p>A business pays a bonus of $3 for every hour that is saved by the production team. The bonus is totalled and then shared equally amongst the members of the team. Each unit is expected to take 30 minutes to complete. 820 units were completed in the week by a production team of 10 people in 380 hours. What is the total amount of production bonus payable in the week?</p>
+            $ <input type="number" class="q-input num-input" data-ans="90" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="section-title">Learning Outcome 3: 2-Mark Question Bank</div>
+
+        <div class="q-block mcq-group" data-ans="Debit side of the Sales Returns Account" data-marks="2">
+            <div class="q-title">Question 1</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following identifies where the total of the sales returns daybook should be posted?</p>
+            <label class="mcq-label"><input type="radio" name="lo3_2q1_opt" value="Credit side of the Receivables Ledger Control Account"> Credit side of the Receivables Ledger Control Account</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q1_opt" value="Debit side of the Sales Returns Account"> Debit side of the Sales Returns Account</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q1_opt" value="Credit side of the Sales Account"> Credit side of the Sales Account</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q1_opt" value="Debit side of the Receivables Ledger Control Account"> Debit side of the Receivables Ledger Control Account</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Credit purchases" data-marks="2">
+            <div class="q-title">Question 2</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following would be recorded on the credit side of the payables ledger control account?</p>
+            <label class="mcq-label"><input type="radio" name="lo3_2q2_opt" value="Credit purchases"> Credit purchases</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q2_opt" value="Purchase returns"> Purchase returns</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q2_opt" value="Discounts received"> Discounts received</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q2_opt" value="Bank payments made to suppliers"> Bank payments made to suppliers</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Reconciling the receivables ledger control account will help to identify any discounts allowed omitted in error." data-marks="2">
+            <div class="q-title">Question 3</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following statements is true regarding the reconciliation of a receivables ledger control account?</p>
+            <label class="mcq-label"><input type="radio" name="lo3_2q3_opt" value="Reconciling the receivables ledger control account will help to identify any discounts allowed omitted in error."> Reconciling the receivables ledger control account will help to identify any discounts allowed omitted in error.</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q3_opt" value="Reconciling the receivables ledger control account will help to identify any customer invoices entered in the wrong account in the subsidiary ledger in error."> Reconciling the receivables ledger control account will help to identify any customer invoices entered in the wrong account in the subsidiary ledger in error.</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q3_opt" value="Reconciling the receivables ledger control account will show if a purchase invoice has been omitted from the payables ledger."> Reconciling the receivables ledger control account will show if a purchase invoice has been omitted from the payables ledger.</label>
+            <label class="mcq-label"><input type="radio" name="lo3_2q3_opt" value="Reconciling the receivables ledger control account guarantees there has been no errors made in the recording of the transactions."> Reconciling the receivables ledger control account guarantees there has been no errors made in the recording of the transactions.</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 4</div><span class="marks">(2 marks)</span>
+            <p>Identify whether each of the following statements are true or false using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="True">True</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="False">False</div>
+            </div>
+            <table>
+                <tr><th>Statement</th><th>True or False</th></tr>
+                <tr><td>The payables ledger control account enables a business to see how much is owed to individual suppliers.</td><td><div class="drop-zone cb-true-false" data-ans="False" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>The receivables ledger control account should reconcile to the total of the list of customer balances in the receivables ledger.</td><td><div class="drop-zone cb-true-false" data-ans="True" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="section-title">Learning Outcome 3: 4-Mark Question Bank</div>
+
+        <div class="q-block">
+            <div class="q-title">Question 1</div><span class="marks">(4 marks)</span>
+            <p>You have been provided with the following summary of transactions for a sole trader business for the month of January:</p>
+            <table>
+                <tr><th>Details</th><th>$</th></tr>
+                <tr><td>Balance of receivables as at 1 January</td><td>8740</td></tr>
+                <tr><td>Goods sold on credit</td><td>9680</td></tr>
+                <tr><td>Payments received from credit customers</td><td>5910</td></tr>
+                <tr><td>Discounts allowed</td><td>140</td></tr>
+                <tr><td>Goods returned from credit customers</td><td>390</td></tr>
+            </table>
+            <p>What will be the closing balance on the receivables ledger control account at the end of January?</p>
+            $ <input type="number" class="q-input num-input" data-ans="11980" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 2</div><span class="marks">(4 marks)</span>
+            <p>Identify whether each item would appear on the debit side or credit side of the payables ledger control account using drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Debit">Debit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Credit">Credit</div>
+            </div>
+            <table>
+                <tr><th>Transactions</th><th>Debit or Credit</th></tr>
+                <tr><td>Purchase returns</td><td><div class="drop-zone q-input-dnd" data-ans="Debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Discounts received</td><td><div class="drop-zone q-input-dnd" data-ans="Debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Balance at the start of the period</td><td><div class="drop-zone q-input-dnd" data-ans="Credit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Bank payments</td><td><div class="drop-zone q-input-dnd" data-ans="Debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 3</div><span class="marks">(4 marks)</span>
+            <p>You have been provided with the following summary of transactions for a sole trader business for the month of July:</p>
+            <table>
+                <tr><th>Details</th><th>$</th></tr>
+                <tr><td>Balance of payables as at 1 July</td><td>1320</td></tr>
+                <tr><td>Goods purchased on credit</td><td>1170</td></tr>
+                <tr><td>Bank payments made to credit suppliers</td><td>925</td></tr>
+                <tr><td>Goods returned to credit suppliers</td><td>138</td></tr>
+            </table>
+            <p>The following extracts regarding discounts received and discounts allowed have been extracted from the records of the business. These have not yet been entered in ledger.</p>
+            <table>
+                <tr><th>Type</th><th>$</th></tr>
+                <tr><td>Discounts received</td><td>45</td></tr>
+                <tr><td>Discounts allowed</td><td>60</td></tr>
+            </table>
+            <p>What would be the balance carried down on the payables ledger control account at the end of July?</p>
+            $ <input type="number" class="q-input num-input" data-ans="1382" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="section-title">Learning Outcome 4: 2-Mark Question Bank</div>
+
+        <div class="q-block mcq-group" data-ans="Revenue - Cost of sales" data-marks="2">
+            <div class="q-title">Question 1</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following shows the correct calculation of gross profit?</p>
+            <label class="mcq-label"><input type="radio" name="lo4_2q1_opt" value="Revenue - Cost of sales"> Revenue - Cost of sales</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q1_opt" value="Revenue + Cost of sales"> Revenue + Cost of sales</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q1_opt" value="Revenue - Expenses"> Revenue - Expenses</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q1_opt" value="Revenue + Expenses"> Revenue + Expenses</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Fixtures" data-marks="2">
+            <div class="q-title">Question 2</div><span class="marks">(2 marks)</span>
+            <p>Which one of the following is an example of a non-current asset?</p>
+            <label class="mcq-label"><input type="radio" name="lo4_2q2_opt" value="Fixtures"> Fixtures</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q2_opt" value="Inventory"> Inventory</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="Current assets" data-marks="2">
+            <div class="q-title">Question 3</div><span class="marks">(2 marks)</span>
+            <p>In which section of the Statement of Financial Position would petty cash be recorded?</p>
+            <label class="mcq-label"><input type="radio" name="lo4_2q3_opt" value="Current assets"> Current assets</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q3_opt" value="Non-current assets"> Non-current assets</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q3_opt" value="Equity"> Equity</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q3_opt" value="Current liabilities"> Current liabilities</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="$16640" data-marks="2">
+            <div class="q-title">Question 4</div><span class="marks">(2 marks)</span>
+            <p>A sole trader purchased a motor van for use in his business. The cost of the van was $26000. The sole trader has a policy of depreciating motor vans at a rate of 20% using the reducing (diminishing) balance basis. What would be the carrying value at the end of the second year of this motor van?</p>
+            <label class="mcq-label"><input type="radio" name="lo4_2q4_opt" value="$16640"> $16640</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q4_opt" value="$9360"> $9360</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q4_opt" value="$10400"> $10400</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q4_opt" value="$15600"> $15600</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 5</div><span class="marks">(2 marks)</span>
+            <p>Identify whether each of the following statements is true or false using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="True">True</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="False">False</div>
+            </div>
+            <table>
+                <tr><th>Statement</th><th>True or False</th></tr>
+                <tr><td>A Statement of Financial Position summarises the assets, liabilities and capital at a point in time.</td><td><div class="drop-zone q-input-dnd" data-ans="True" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>A trial balance is used to check the value of the debit entries in the bookkeeping system equals the credit entries.</td><td><div class="drop-zone q-input-dnd" data-ans="True" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block mcq-group" data-ans="$3970" data-marks="2">
+            <div class="q-title">Question 6</div><span class="marks">(2 marks)</span>
+            <p>You have been provided with the following list of balances for a sole trader business:</p>
+            <table>
+                <tr><th>Item</th><th>$</th></tr>
+                <tr><td>Purchases</td><td>3620</td></tr>
+                <tr><td>Opening inventory</td><td>1420</td></tr>
+                <tr><td>Closing inventory</td><td>1630</td></tr>
+                <tr><td>Carriage inwards</td><td>560</td></tr>
+                <tr><td>Carriage outwards</td><td>870</td></tr>
+                <tr><td>Discounts received</td><td>200</td></tr>
+            </table>
+            <p>Which one of the following amounts would be identified as the cost of goods sold on the Statement of Profit or Loss?</p>
+            <label class="mcq-label"><input type="radio" name="lo4_2q6_opt" value="$3970"> $3970</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q6_opt" value="$3410"> $3410</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q6_opt" value="$2850"> $2850</label>
+            <label class="mcq-label"><input type="radio" name="lo4_2q6_opt" value="$3770"> $3770</label>
+            <div class="fb"></div>
+        </div>
+
+        <div class="section-title">Learning Outcome 4: 4-Mark Question Bank</div>
+
+        <div class="q-block">
+            <div class="q-title">Question 1</div><span class="marks">(4 marks)</span>
+            <p>Pierre purchased a motor van for use in his sole trader business. The motor van cost $18000 and is to be depreciated using the reducing balance (diminishing balance) basis at a rate of 25%. What would be the depreciation charge for the second year of ownership of the motor van?</p>
+            $ <input type="number" class="q-input num-input" data-ans="3375" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 2</div><span class="marks">(4 marks)</span>
+            <p>You have been provided with the following extract from the trial balance of a sole trader as at 31 December:</p>
+            <table>
+                <tr><th>Account</th><th>Debit ($)</th><th>Credit ($)</th></tr>
+                <tr><td>Equipment</td><td>18500</td><td></td></tr>
+                <tr><td>Bank</td><td></td><td>1240</td></tr>
+                <tr><td>Inventory</td><td>3290</td><td></td></tr>
+                <tr><td>Trade payables</td><td></td><td>4650</td></tr>
+                <tr><td>Trade receivables</td><td>6380</td><td></td></tr>
+                <tr><td>Fixtures and fittings</td><td>6800</td><td></td></tr>
+                <tr><td>Long term loan</td><td></td><td>5000</td></tr>
+            </table>
+            <p>What amount would appear as the total of the current assets in the Statement of Financial Position at the year end?</p>
+            $ <input type="number" class="q-input num-input" data-ans="9670" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 3</div><span class="marks">(4 marks)</span>
+            <p>Identify whether each of the following account balances will appear as a debit or credit entry in an initial trial balance using the drag and drop options.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Debit">Debit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Credit">Credit</div>
+            </div>
+            <table>
+                <tr><th>Account Balance</th><th>Debit or Credit</th></tr>
+                <tr><td>Accrued income</td><td><div class="drop-zone q-input-dnd" data-ans="Debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Rental income received</td><td><div class="drop-zone q-input-dnd" data-ans="Credit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Rent expense paid</td><td><div class="drop-zone q-input-dnd" data-ans="Debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>Prepaid expenses</td><td><div class="drop-zone q-input-dnd" data-ans="Debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 4</div><span class="marks">(4 marks)</span>
+            <p>You have been provided with the following extract from an incomplete trial balance for a sole trader for the year ending 31 December:</p>
+            <table>
+                <tr><th>Account</th><th>Debit $</th><th>Credit $</th></tr>
+                <tr><td>Revenue</td><td></td><td>17280</td></tr>
+                <tr><td>Wages and salaries</td><td>3500</td><td></td></tr>
+                <tr><td>Office expenses</td><td>2050</td><td></td></tr>
+                <tr><td>Computer equipment</td><td>3000</td><td></td></tr>
+                <tr><td>Purchases</td><td>5520</td><td></td></tr>
+                <tr><td>Opening inventory</td><td>800</td><td></td></tr>
+                <tr><td>Discounts received</td><td></td><td>350</td></tr>
+                <tr><td>Fixtures and fittings</td><td>2000</td><td></td></tr>
+            </table>
+            <p>Closing inventory at the end of December was valued at $1200. What amount would appear as the net profit in the Statement of Profit or Loss for the year ending 31 December?</p>
+            $ <input type="number" class="q-input num-input" data-ans="6960" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 5</div><span class="marks">(4 marks)</span>
+            <p>A business sells goods on credit to customers. The balance on the trade receivables at the end of the year was $32650. After reviewing the aged receivables, it is decided that a balance of $1800 is to be written off as an irrecoverable debt. Complete the sentences using drag and drop:</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="30850">30850</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="32650">32650</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="debit">debit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="credit">credit</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="decrease">decrease</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="increase">increase</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="not change">not change</div>
+            </div>
+            <p style="line-height: 2.5;">
+                The amount shown in the Statement of Financial Position at year end for trade receivables will be $ 
+                <span class="drop-zone q-input-dnd" data-ans="30850" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span>.<br>
+                The balance on the irrecoverable debts account will appear on the 
+                <span class="drop-zone q-input-dnd" data-ans="debit" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span> side of the trial balance.<br>
+                The irrecoverable debt will increase the amount shown as expenses in the Statement of Profit or Loss and the result will be to 
+                <span class="drop-zone q-input-dnd" data-ans="decrease" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span> the net profit for the year.<br>
+                The irrecoverable debt will 
+                <span class="drop-zone q-input-dnd" data-ans="not change" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></span> the amount shown for revenue in the Statement of Profit or Loss.
+            </p>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 6</div><span class="marks">(4 marks)</span>
+            <p>Identify the term being described in each of the following statements relating to depreciation using the drag and drop options below.</p>
+            <div class="drag-bank">
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Depreciable amount">Depreciable amount</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Carrying amount">Carrying amount</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Depreciation">Depreciation</div>
+                <div class="draggable" draggable="true" ondragstart="drag(event)" data-val="Residual value">Residual value</div>
+            </div>
+            <table>
+                <tr><th>Statement</th><th>Term</th></tr>
+                <tr><td>A measure of the cost of the economic benefit of the non-current asset consumed during the period.</td><td><div class="drop-zone q-input-dnd" data-ans="Depreciation" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>The cost of the non-current asset less the accumulated depreciation to date.</td><td><div class="drop-zone q-input-dnd" data-ans="Carrying amount" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>The amount the asset is expected to be sold for when it is no longer of use to the business.</td><td><div class="drop-zone q-input-dnd" data-ans="Residual value" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+                <tr><td>The cost of an asset less any residual value</td><td><div class="drop-zone q-input-dnd" data-ans="Depreciable amount" data-marks="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="clearDrop(event)"></div></td></tr>
+            </table>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 7</div><span class="marks">(4 marks)</span>
+            <p>A business has a year end of December 20X1. During the year, the following rental expense invoices were paid:</p>
+            <table>
+                <tr><th>Date</th><th>Period</th><th>$</th></tr>
+                <tr><td>14 March</td><td>2 months to 28 February 20X1</td><td>2400</td></tr>
+                <tr><td>12 June</td><td>3 months to 31 May 20X1</td><td>3600</td></tr>
+                <tr><td>14 October</td><td>4 months to 30 September 20X1</td><td>5000</td></tr>
+                <tr><td>15 December</td><td>2 months to 30 November 20X1</td><td>2500</td></tr>
+            </table>
+            <p>What amount should be accrued for rental expenses at the year end?</p>
+            $ <input type="number" class="q-input num-input" data-ans="1250" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 8</div><span class="marks">(4 marks)</span>
+            <p>Will purchased a machine for use in his business on 1 June at a cost of $12400. The machine has a residual value of $2000 and an expected life of 5 years. What is the carrying value of the machine at the end of the first year?</p>
+            $ <input type="number" class="q-input num-input" data-ans="10320" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 9</div><span class="marks">(4 marks)</span>
+            <p>A business has a year end of December 20X2. During the year, the business received commission as follows:</p>
+            <table>
+                <tr><th>Date</th><th>Period</th><th>$</th></tr>
+                <tr><td>28 April</td><td>3 months to 31 March 20X2</td><td>780</td></tr>
+                <tr><td>26 July</td><td>3 months to 30 June 20X2</td><td>780</td></tr>
+                <tr><td>21 October</td><td>3 months to 30 September 20X2</td><td>840</td></tr>
+                <tr><td>15 December</td><td>2 months to 30 November 20X2</td><td>560</td></tr>
+            </table>
+            <p>What amount should be accrued for commission income at the year end?</p>
+            $ <input type="number" class="q-input num-input" data-ans="280" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 10</div><span class="marks">(4 marks)</span>
+            <p>The electricity account for a sole trader for the year ended 30 September 20X4 was as follows:</p>
+            <table>
+                <tr><th>Transaction Details</th><th>$</th></tr>
+                <tr><td>Opening balance for electricity accrued at 1 October 20X3</td><td>200</td></tr>
+                <tr><td>Payments made during the year:</td><td></td></tr>
+                <tr><td>1 December for 3 months to 30 November 20X3</td><td>600</td></tr>
+                <tr><td>1 March 20X4 for 3 months to 28 February 20X4</td><td>800</td></tr>
+                <tr><td>1 June 20X4 for 3 months to 31 May 20X4</td><td>750</td></tr>
+                <tr><td>1 September 20X4 for 3 months to 31 August 20X4</td><td>525</td></tr>
+            </table>
+            <p>What amount would appear in the Statement of Profit or Loss for the year ended 30 September 20X4 for electricity expenses?</p>
+            $ <input type="number" class="q-input num-input" data-ans="2650" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <div class="q-block">
+            <div class="q-title">Question 11</div><span class="marks">(4 marks)</span>
+            <p>Summer runs a small business as a sole trader. She has provided the following information for the year ending 31 December 20X5:</p>
+            <table>
+                <tr><th>Component</th><th>$</th></tr>
+                <tr><td>Capital as at 1 January 20X5</td><td>16500</td></tr>
+                <tr><td>Capital introduced during the year</td><td>5000</td></tr>
+                <tr><td>Drawings during the year</td><td>18000</td></tr>
+                <tr><td>Capital as at 31 December 20X5</td><td>34400</td></tr>
+            </table>
+            <p>What was the profit for the year made by Summer's business?</p>
+            $ <input type="number" class="q-input num-input" data-ans="30900" data-marks="4">
+            <div class="fb"></div>
+        </div>
+
+        <button type="button" class="submit-btn" onclick="gradeExam()">Submit Assessment</button>
+    </form>
+
+    <div id="results">
+        <h2>Assessment Results</h2>
+        <p><strong>Total Marks Awarded:</strong> <span id="scoreDisplay"></span> / 152</p>
+        <p><strong>Percentage Performance:</strong> <span id="percentageDisplay"></span>%</p>
+        <p><strong>Classification Grade:</strong> <span id="gradeDisplay"></span></p>
+        <p><em>Review individual items above to match performance benchmarks and clear erroneous assumptions.</em></p>
+    </div>
+</div>
+
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.getAttribute("data-val"));
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        var target = ev.target;
+        
+        if (target.classList.contains('drop-zone')) {
+            target.innerText = data;
+            target.setAttribute('data-user-val', data);
+            target.classList.add('filled');
+        } else if (target.parentElement.classList.contains('drop-zone')) {
+            target.parentElement.innerText = data;
+            target.parentElement.setAttribute('data-user-val', data);
+            target.parentElement.classList.add('filled');
+        }
+    }
+
+    function clearDrop(ev) {
+        var target = ev.target;
+        if(target.classList.contains('drop-zone')) {
+            target.innerText = '';
+            target.setAttribute('data-user-val', '');
+            target.classList.remove('filled');
+        }
+    }
+
+    function gradeExam() {
+        let totalScore = 0;
+        let maxPossible = 152; 
+
+        // 1. Evaluate Direct Standard Numeric Inputs
+        document.querySelectorAll('input.q-input').forEach(input => {
+            const correctAnswer = input.getAttribute('data-ans');
+            const marks = parseInt(input.getAttribute('data-marks'));
+            let parent = input.closest('p') || input.parentElement;
+            let fb = parent.querySelector('.fb');
+            if(!fb) { fb = input.closest('.q-block').querySelector('.fb'); }
+
+            if (input.value.trim() === correctAnswer) {
+                totalScore += marks;
+                if(fb) { fb.innerHTML = '&#10004; Correct'; fb.className = 'fb c'; }
+            } else {
+                if(fb) { fb.innerHTML = '&#10008; (Correct Answer: ' + correctAnswer + ')'; fb.className = 'fb i'; }
+            }
+        });
+
+        // 2. Evaluate Drag and Drop Matching Fields
+        document.querySelectorAll('.q-input-dnd, .cb-true-false').forEach(dropZone => {
+            const correctAnswer = dropZone.getAttribute('data-ans');
+            const marks = parseInt(dropZone.getAttribute('data-marks'));
+            const userValue = dropZone.getAttribute('data-user-val') || '';
+            
+            let fb = dropZone.nextElementSibling;
+            if (!fb || !fb.classList.contains('fb-dnd-spec')) {
+                fb = document.createElement('span');
+                fb.className = 'fb-dnd-spec';
+                dropZone.parentNode.insertBefore(fb, dropZone.nextSibling);
+            }
+
+            if (userValue.trim() === correctAnswer) {
+                totalScore += marks;
+                fb.innerHTML = '&#10004; Correct';
+                fb.className = 'fb-dnd-spec c';
+            } else {
+                fb.innerHTML = '&#10008; (Correct: ' + correctAnswer + ')';
+                fb.className = 'fb-dnd-spec i';
+            }
+        });
+
+        // 3. Evaluate Multiple Choice Questions (Radio Groups)
+        document.querySelectorAll('.mcq-group').forEach(group => {
+            const correctAnswer = group.getAttribute('data-ans');
+            const marks = parseInt(group.getAttribute('data-marks'));
+            const selected = group.querySelector('input[type="radio"]:checked');
+            const fb = group.querySelector('.fb');
+            
+            if (selected && selected.value === correctAnswer) {
+                totalScore += marks;
+                fb.innerHTML = '&#10004; Correct';
+                fb.className = 'fb c';
+            } else {
+                fb.innerHTML = '&#10008; Correct Answer: ' + correctAnswer;
+                fb.className = 'fb i';
+            }
+        });
+
+        // 4. Evaluate Multiple Response Questions (Checkboxes)
+        document.querySelectorAll('.mrq-group').forEach(group => {
+            const correctAnswers = group.getAttribute('data-ans').split(',');
+            const marksPerCorrect = parseInt(group.getAttribute('data-marks')) / correctAnswers.length;
+            const checkboxes = group.querySelectorAll('input[type="checkbox"]');
+            const fb = group.querySelector('.fb');
+            
+            let groupScore = 0;
+            checkboxes.forEach(cb => {
+                if(cb.checked && correctAnswers.includes(cb.value)) {
+                    groupScore += marksPerCorrect;
+                } else if (cb.checked && !correctAnswers.includes(cb.value)) {
+                    groupScore -= marksPerCorrect; 
+                }
+            });
+            
+            groupScore = Math.max(0, groupScore); 
+            totalScore += groupScore;
+
+            if (groupScore === parseInt(group.getAttribute('data-marks'))) {
+                fb.innerHTML = '&#10004; Correct';
+                fb.className = 'fb c';
+            } else {
+                fb.innerHTML = '&#10008; Correct Answers: ' + correctAnswers.join(' AND ');
+                fb.className = 'fb i';
+            }
+        });
+
+        // Performance Tier Evaluations
+        let pct = Math.round((totalScore / maxPossible) * 100);
+        let grade = "Fail";
+        let gradeClass = "grade-fail";
+
+        if (pct >= 75) { grade = "Distinction"; gradeClass = "grade-dist"; }
+        else if (pct >= 60) { grade = "Merit"; gradeClass = "grade-merit"; }
+        else if (pct >= 50) { grade = "Pass"; gradeClass = "grade-pass"; }
+
+        document.getElementById('scoreDisplay').innerText = totalScore;
+        document.getElementById('percentageDisplay').innerText = pct;
+        
+        let gel = document.getElementById('gradeDisplay');
+        gel.innerText = grade;
+        gel.className = gradeClass;
+        
+        document.getElementById('results').style.display = 'block';
+        document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
